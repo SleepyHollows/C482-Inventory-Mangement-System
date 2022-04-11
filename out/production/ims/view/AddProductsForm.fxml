@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="721.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddProductsFormController">
+    <Pane layoutX="56.0" layoutY="38.0" prefHeight="645.0" prefWidth="786.0" style="-fx-background-color: black; -fx-background-radius: 5;">
+        <Pane layoutX="3.0" layoutY="3.0" prefHeight="639.0" prefWidth="780.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+            <Text layoutX="25.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Product">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Text>
+            <TextField fx:id="enterId" disable="true" layoutX="98.0" layoutY="110.0" promptText="Auto Gen-Disabled" />
+            <Text layoutX="18.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" wrappingWidth="84.0">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <Text layoutX="17.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="36.61114501953125">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <TextField fx:id="enterName" layoutX="98.0" layoutY="161.0" promptText="Enter a name" />
+            <TextField fx:id="enterInv" layoutX="98.0" layoutY="207.0" prefHeight="25.0" prefWidth="84.0" promptText="Enter a value" />
+            <TextField fx:id="enterPrice" layoutX="98.0" layoutY="255.0" prefHeight="25.0" prefWidth="84.0" promptText="Enter a value" />
+            <TextField fx:id="enterMax" layoutX="98.0" layoutY="303.0" prefHeight="25.0" prefWidth="84.0" promptText="Enter a value" />
+            <Button layoutX="560.0" layoutY="591.0" mnemonicParsing="false" onAction="#saveHandler" prefHeight="34.0" prefWidth="92.0" text="Save" />
+            <Button layoutX="674.0" layoutY="591.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="34.0" prefWidth="92.0" text="Exit" />
+            <Text layoutX="18.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="36.61114501953125">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Text>
+            <TextField fx:id="enterMin" layoutX="98.0" layoutY="356.0" prefHeight="25.0" prefWidth="84.0" promptText="Enter a value" />
+            <Button layoutX="560.0" layoutY="540.0" mnemonicParsing="false" onAction="#deletePartHandler" prefHeight="34.0" prefWidth="203.0" text="Remove Associated Part" />
+            <TextField fx:id="SearchPartBox" layoutX="606.0" layoutY="59.0" onAction="#searchPartEvent" prefHeight="25.0" prefWidth="156.0" promptText="Search by Part ID or Name" />
+            <TableView fx:id="tableOne" layoutX="358.0" layoutY="103.0" prefHeight="175.0" prefWidth="408.0">
+                <columns>
+                    <TableColumn fx:id="partId" prefWidth="71.99999618530273" text="Part ID" />
+                    <TableColumn fx:id="partName" prefWidth="96.800048828125" text="Part Name" />
+                    <TableColumn fx:id="partInv" prefWidth="93.59991455078125" text="Inventory Level" />
+                    <TableColumn fx:id="partPrice" prefWidth="144.0" text="Price/ Cost Per Unit" />
+                </columns>
+            </TableView>
+            <TableView fx:id="tableTwo" layoutX="358.0" layoutY="356.0" prefHeight="175.0" prefWidth="408.0">
+                <columns>
+                    <TableColumn fx:id="partToProductId" prefWidth="71.99999618530273" text="Part ID" />
+                    <TableColumn fx:id="partToProductName" prefWidth="96.800048828125" text="Part Name" />
+                    <TableColumn fx:id="partToProductInv" prefWidth="93.59991455078125" text="Inventory Level" />
+                    <TableColumn fx:id="partToProductPrice" prefWidth="144.0" text="Price/ Cost Per Unit" />
+                </columns>
+            </TableView>
+            <Button layoutX="638.0" layoutY="299.0" mnemonicParsing="false" onAction="#AddPartHandler" prefHeight="34.0" prefWidth="92.0" text="Add" />
+        </Pane>
+    </Pane>
+</AnchorPane>

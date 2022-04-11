@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="682.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartsFormController">
+    <Text layoutX="111.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Parts">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <RadioButton layoutX="276.0" layoutY="85.0" mnemonicParsing="false" onAction="#inHouseHandler" selected="true" text="In-House">
+      <toggleGroup>
+         <ToggleGroup fx:id="radioButton" />
+      </toggleGroup></RadioButton>
+    <RadioButton layoutX="496.0" layoutY="85.0" mnemonicParsing="false" onAction="#OutsourcedHandler" text="Outsourced" toggleGroup="$radioButton" />
+    <TextField fx:id="enterId" disable="true" layoutX="284.0" layoutY="170.0" promptText="Auto Gen-Disabled" />
+    <Text layoutX="141.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text layoutX="139.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text layoutX="137.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text layoutX="135.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" wrappingWidth="84.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text layoutX="135.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="36.61114501953125">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text fx:id="specialValueLabel" layoutX="134.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" wrappingWidth="141.81112670898438">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <TextField fx:id="enterName" layoutX="284.0" layoutY="220.0" promptText="Enter a name" />
+    <TextField fx:id="enterInv" layoutX="284.0" layoutY="267.0" promptText="Enter a value" />
+    <TextField fx:id="enterPrice" layoutX="284.0" layoutY="314.0" promptText="Enter a value" />
+    <TextField fx:id="enterMax" layoutX="284.0" layoutY="364.0" promptText="Enter a value" />
+    <TextField fx:id="enterSpecialValue" layoutX="284.0" layoutY="415.0" promptText="Enter a value" />
+    <Button layoutX="527.0" layoutY="551.0" mnemonicParsing="false" onAction="#saveHandler" prefHeight="34.0" prefWidth="92.0" text="Save" />
+    <Text layoutX="490.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="36.61114501953125">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <TextField fx:id="enterMin" layoutX="622.0" layoutY="364.0" promptText="Enter a value" />
+    <Button layoutX="651.0" layoutY="551.0" mnemonicParsing="false" onAction="#exitHandler" prefHeight="34.0" prefWidth="92.0" text="Exit" />
+</AnchorPane>

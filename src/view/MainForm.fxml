@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+    <Pane layoutX="38.0" layoutY="135.0" prefHeight="301.0" prefWidth="395.0" style="-fx-background-color: grey; -fx-background-radius: 5;">
+        <Pane layoutX="3.0" layoutY="3.0" prefHeight="295.0" prefWidth="389.0" style="-fx-background-color: white;">
+            <TextField fx:id="partSearchBox" layoutX="184.0" layoutY="7.0" onAction="#searchPartEvent" prefHeight="26.0" prefWidth="191.0" promptText="Search by Part ID or Name" />
+            <TableView fx:id="partTable" layoutY="38.0" prefHeight="214.0" prefWidth="389.0">
+                <columns>
+                    <TableColumn fx:id="partIdColumn" prefWidth="71.99999618530273" text="Part ID" />
+                    <TableColumn fx:id="partNameColumn" prefWidth="91.19998168945312" text="Part Name" />
+                    <TableColumn fx:id="partInventoryColumn" prefWidth="98.40003967285156" text="Inventory Level" />
+                    <TableColumn fx:id="partPriceColumn" prefWidth="128.0" text="Price/ Cost Per Unit" />
+                </columns>
+            </TableView>
+            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts" />
+            <Button fx:id="ModifyPart" layoutX="236.0" layoutY="252.0" mnemonicParsing="false" onAction="#openModifyPartsForm" style="-fx-background-color: silver;" text="Modify" />
+            <Button layoutX="320.0" layoutY="252.0" mnemonicParsing="false" onAction="#deletePartHandler" style="-fx-background-color: silver;" text="Delete" />
+            <Button layoutX="165.0" layoutY="252.0" mnemonicParsing="false" onAction="#openAddPartsForm" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: silver;" text="Add" />
+        </Pane>
+    </Pane>
+    <Pane layoutX="480.0" layoutY="135.0" prefHeight="301.0" prefWidth="395.0" style="-fx-background-color: grey; -fx-background-radius: 5;">
+        <Pane layoutX="3.0" layoutY="3.0" prefHeight="295.0" prefWidth="389.0" style="-fx-background-color: white;">
+            <TableView fx:id="productTable" layoutY="38.0" prefHeight="214.0" prefWidth="389.0">
+                <columns>
+                    <TableColumn fx:id="productIdColumn" prefWidth="71.99999618530273" text="Product ID" />
+                    <TableColumn fx:id="productNameColumn" prefWidth="96.800048828125" text="Product Name" />
+                    <TableColumn fx:id="productInventoryColumn" prefWidth="93.59991455078125" text="Inventory Level" />
+                    <TableColumn fx:id="productPriceColumn" prefWidth="128.0" text="Price/ Cost Per Unit" />
+                </columns>
+            </TableView>
+            <TextField fx:id="productSearchBox" layoutX="182.0" layoutY="7.0" onAction="#searchProductEvent" prefHeight="26.0" prefWidth="191.0" promptText="Search by Product ID or Name" />
+            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" />
+            <Button fx:id="ModifyProduct" layoutX="236.0" layoutY="252.0" mnemonicParsing="false" onAction="#openModifyProductsForm" style="-fx-background-color: silver;" text="Modify" />
+            <Button layoutX="320.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteProductHandler" style="-fx-background-color: silver;" text="Delete" />
+            <Button layoutX="165.0" layoutY="252.0" mnemonicParsing="false" onAction="#openAddProductsForm" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: silver;" text="Add" />
+        </Pane>
+    </Pane>
+    <Text layoutX="24.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Management System" wrappingWidth="369.1830654144287">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Text>
+    <Button layoutX="833.0" layoutY="453.0" mnemonicParsing="false" onAction="#exitHandler" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: silver;" text="Exit" />
+</Pane>
