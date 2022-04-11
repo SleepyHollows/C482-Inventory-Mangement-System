@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ims:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ims_jar</output-path>
+    <root id="archive" name="ims.jar">
+      <element id="module-output" name="ims" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Programming/Java Libraries/javafx-sdk-17.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
